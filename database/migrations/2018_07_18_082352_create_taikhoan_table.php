@@ -27,7 +27,7 @@ class CreateTaikhoanTable extends Migration
             $table->string('laNhaToChuc');
             $table->string('laNguoiDung');
             $table->string('active');
-            $table->string('soTien');
+            $table->integer('soTien');
             $table->timestamps();
         });
     }
