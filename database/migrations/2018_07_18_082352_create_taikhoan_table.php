@@ -20,13 +20,13 @@ class CreateTaikhoanTable extends Migration
             $table->string('email');
             $table->string('hoVaTen',30);
             $table->date('ngaySinh');
-            $table->string('gioiTinh');
+            $table->string('gioiTinh');//Chọn giới tính, tinyInteger => create table gioiTinh
             $table->string('CMND');
             $table->string('soDienThoai');
-            $table->string('laAdmin');
-            $table->string('laNhaToChuc');
-            $table->string('laNguoiDung');
-            $table->string('active');
+            $table->string('laAdmin');//tinyInteger
+            $table->string('laNhaToChuc');//tinyInteger
+            $table->string('laNguoiDung');//tinyInteger
+            $table->string('active');//tinyInteger
             $table->integer('soTien');
             $table->timestamps();
         });

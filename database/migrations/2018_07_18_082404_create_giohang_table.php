@@ -17,7 +17,7 @@ class CreateGiohangTable extends Migration
             $table->increments('id');
             $table->integer('idTaiKhoan');
             $table->integer('idTicket');
-            $table->string('daThanhToan');
+            $table->string('daThanhToan');//tinyInteger
             $table->timestamps();
         });
     }
