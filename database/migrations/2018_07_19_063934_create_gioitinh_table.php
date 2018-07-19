@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGiohangTable extends Migration
+class CreateGioitinhTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateGiohangTable extends Migration
      */
     public function up()
     {
-        Schema::create('giohang', function (Blueprint $table) {
+        Schema::create('gioitinh', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('idTaiKhoan');
-            $table->integer('idTicket');
-            $table->tinyInteger('daThanhToan');
+            $table->string('gioiTinh');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateGiohangTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('giohang');
+        Schema::dropIfExists('gioitinh');
     }
 }
