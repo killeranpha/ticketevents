@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVedadatTable extends Migration
+class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,15 @@ class CreateVedadatTable extends Migration
      */
     public function up()
     {
-        Schema::create('vedadat', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('idGioHang');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('CMND');
+            $table->string('soDienThoai');
+            $table->tinyInteger('active');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -27,6 +33,6 @@ class CreateVedadatTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vedadat');
+        Schema::dropIfExists('users');
     }
 }
