@@ -33,6 +33,12 @@
                                 <table class="table table-borderless table-data3">
                                     <thead>
                                         <tr>
+                                        <td>
+                                                        <label class="au-checkbox">
+                                                            <input type="checkbox">
+                                                            <span class="au-checkmark"></span>
+                                                        </label>
+                                                    </td>
                                             <th>Tên</th>
                                             <th>Email</th>
                                             <th>CMND</th>
@@ -54,17 +60,14 @@
                                             <td class="denied">Chưa ACTIVE</td>
                                             @endif
                                             <td>
-                                                    <div class="table-data-feature">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Cảnh báo">
-                                                        <i class="zmdi zmdi-mail-send"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Xóa">
-                                                        <i class="zmdi zmdi-delete"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Nhiều hơn">
-                                                        <i class="zmdi zmdi-more"></i>
-                                                    </button>
-                                                    </div>
+                                                <div class="table-data-feature">
+                                                <button class="item" data-toggle="tooltip" data-placement="top" title="Thông báo">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                                </button>
+                                                <button class="item" data-toggle="tooltip" data-placement="top" title="Xóa">
+                                                    <i class="zmdi zmdi-delete"></i>
+                                                </button>
+                                                </div>
                                             </td>
                                         </tr>
                                         @endforeach

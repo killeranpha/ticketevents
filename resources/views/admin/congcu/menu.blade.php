@@ -33,7 +33,7 @@
                                         <a href="danhsachchucnang">Danh Sách Chức Năng</a>
                                     </li>
                                     <li>
-                                        <a href="danhsachnhom">Danh Sách Nhóm</a>
+                                        <a href="danhsachnhom">Danh Sách Nhóm Người Dùng</a>
                                     </li>
                                     <li>
                                         <a href="danhsachcauhinh">Danh Sách Cấu Hình</a>
