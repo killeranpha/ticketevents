@@ -45,6 +45,7 @@ Route::get('/quanlynguoidung', function () {
     return view('admin.nguoidung.quanlynguoidung');
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/danhsachnhomnguoidung','NhomNguoiDungController@index');
 Route::get('/danhsachchucnang', function () {
     return view('admin.congcu.danhsach.danhsachchucnang');
@@ -54,10 +55,16 @@ Route::get('danhsachnguoidung','NguoiDungController@getDanhSach');
 Route::get('/searchnhomnguoidung','NhomNguoiDungController@searchNhomNguoiDung')->name('searchNhomNguoiDung');
 // Route::get('/ketquasearchnhomnguoidung','NhomNguoiDungController@searchNhomNguoiDung');
 =======
+=======
+>>>>>>> 6ceacccef6d4eff24c5ee9b7a6b6ed4d5139edf5
 Route::get('/danhsachnhomnguoidung', function () {
     return view('admin.nguoidung.danhsachnhomnguoidung');
 });
 Route::get('/danhsachchucnang','ChucNangController@index');
 //search - chuc nang
+<<<<<<< HEAD
+Route::get('/search','ChucNangController@getSearch')->name('searchChucNang');
+>>>>>>> 6ceacccef6d4eff24c5ee9b7a6b6ed4d5139edf5
+=======
 Route::get('/search','ChucNangController@getSearch')->name('searchChucNang');
 >>>>>>> 6ceacccef6d4eff24c5ee9b7a6b6ed4d5139edf5
