@@ -14,7 +14,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                @include('admin.congcu.seach')
+                                @include('admin.congcu.search')
                             </div>
                         </div>
                     </div>

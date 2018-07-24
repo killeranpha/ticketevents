@@ -47,7 +47,6 @@ Route::get('/quanlynguoidung', function () {
 Route::get('/danhsachnhomnguoidung', function () {
     return view('admin.nguoidung.danhsachnhomnguoidung');
 });
-Route::get('/danhsachchucnang', function () {
-    return view('admin.congcu.danhsach.danhsachchucnang');
-});
-Route::get('danhsachnguoidung','NguoiDungController@getDanhSach');
+Route::get('/danhsachchucnang','ChucNangController@index');
+//search - chuc nang
+Route::get('/search','ChucNangController@getSearch')->name('searchChucNang');
