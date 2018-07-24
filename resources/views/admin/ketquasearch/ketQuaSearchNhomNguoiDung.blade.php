@@ -13,8 +13,7 @@
         
         <div class="row">
             <div class="col-md-12">
-                <h3 class="title-5 m-b-35">Danh sách nhóm người dùng</h3>
-                
+                <h4>Tìm thấy {{count($r)}} kết quả</h4>
                 <!-- <div class="table-data__tool">
                     <div class="filters m-b-45">
                         <div class="rs-select2--dark rs-select2--md m-r-10 rs-select2--border">
@@ -46,7 +45,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($danhSachNhomNguoiDung as $value)
+                            @foreach($r as $value)
                             <tr>
                                 <td>{{ $value["thuTu"]}}</td>
                                 <td>{{ $value["ten"]}}</td>
@@ -71,11 +70,4 @@
         
     </div>
 </section>
-<div class="text-center">
-   <div class="pagination">
-    <ul class="pagination-list">
-        {!!$danhSachNhomNguoiDung->links(); !!}
-    </ul>
-</div>
-</div>
 @endsection

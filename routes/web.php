@@ -44,10 +44,20 @@ Route::get('/thongke', function () {
 Route::get('/quanlynguoidung', function () {
     return view('admin.nguoidung.quanlynguoidung');
 });
-Route::get('/danhsachnhomnguoidung', function () {
-    return view('admin.nguoidung.danhsachnhomnguoidung');
-});
+<<<<<<< HEAD
+Route::get('/danhsachnhomnguoidung','NhomNguoiDungController@index');
 Route::get('/danhsachchucnang', function () {
     return view('admin.congcu.danhsach.danhsachchucnang');
 });
 Route::get('danhsachnguoidung','NguoiDungController@getDanhSach');
+//search nhóm người dùng
+Route::get('/searchnhomnguoidung','NhomNguoiDungController@searchNhomNguoiDung')->name('searchNhomNguoiDung');
+// Route::get('/ketquasearchnhomnguoidung','NhomNguoiDungController@searchNhomNguoiDung');
+=======
+Route::get('/danhsachnhomnguoidung', function () {
+    return view('admin.nguoidung.danhsachnhomnguoidung');
+});
+Route::get('/danhsachchucnang','ChucNangController@index');
+//search - chuc nang
+Route::get('/search','ChucNangController@getSearch')->name('searchChucNang');
+>>>>>>> 6ceacccef6d4eff24c5ee9b7a6b6ed4d5139edf5

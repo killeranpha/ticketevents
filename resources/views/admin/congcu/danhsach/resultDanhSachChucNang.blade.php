@@ -3,18 +3,21 @@
 @section('content')
 <section class="p-t-20">
     <div class="container">
-        <!-- WELCOME-->
-        @include('admin.layout.welcomeback')
+         <!-- WELCOME-->
+         @include('admin.layout.welcomeback')
         <!-- END WELCOME-->
 
         <!-- BREADCRUMB-->
         @include('admin.layout.breadcrumbChucNang')
         <!-- END BREADCRUMB-->
-        
+
         <div class="row">
             <div class="col-md-12">
                 <!-- <h3 class="title-5 m-b-35">Danh sách chức năng</h3> -->
-                            
+
+                <!-- In kết quả tìm thấy được bao nhiêu! -->
+                <p>Tìm thấy {{ count($rCN)}} kết quả</p>
+
                 <div class="table-responsive table-responsive-data2">
                     <table class="table table-borderless table-data3">
 					    <thead>
@@ -24,11 +27,11 @@
 					            <th>Public</th>
                                 <th>Nhóm chức năng</th>
 					            <th>Thứ tự</th>
-					            <th>Chức năng</th>
+					            <th></th>
 					        </tr>
 					    </thead>
 					    <tbody>
-                        <!-- hgjhgjj -->
+                        <!-- foreach in kết quả tìm kiếm -->
                         @foreach($rCN as $value)
 					        <tr>
 							    <td>{{ $value['ten'] }}</td>
