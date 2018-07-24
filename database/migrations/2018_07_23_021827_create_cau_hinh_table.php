@@ -15,6 +15,8 @@ class CreateCauHinhTable extends Migration
     {
         Schema::create('cauHinh', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('ten');
+            $table->integer('idNhomCauHinh');
             $table->timestamps();
         });
     }

@@ -51,3 +51,4 @@ Route::get('/danhsachchucnang', function () {
     return view('admin.congcu.danhsach.danhsachchucnang');
 });
 Route::get('danhsachnguoidung','NguoiDungController@getDanhSach');
+Route::get('danhsachcauhinh','CauHinhController@index')->name('danhsachcauhinh');
