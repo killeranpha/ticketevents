@@ -44,13 +44,24 @@
 
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
-            <!-- BREADCRUMB-->
-            @include('admin.layout.breadcrumb')
-            <!-- END BREADCRUMB-->
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ceacccef6d4eff24c5ee9b7a6b6ed4d5139edf5
 
             <!-- WELCOME-->
-            @include('admin.layout.welcomeback')
+            <!-- @include('admin.layout.welcomeback') -->
             <!-- END WELCOME-->
+
+            <!-- BREADCRUMB-->
+            <!-- @include('admin.layout.breadcrumb') --> <!--Chú ý đây là phần hiển thị form search-->
+            <!-- END BREADCRUMB-->
+
+<<<<<<< HEAD
+>>>>>>> 6ceacccef6d4eff24c5ee9b7a6b6ed4d5139edf5
+=======
+>>>>>>> 6ceacccef6d4eff24c5ee9b7a6b6ed4d5139edf5
             <!-- CONTENT-->
             @yield('content')
             <!-- END CONTENT-->
