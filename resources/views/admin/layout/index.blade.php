@@ -39,7 +39,7 @@
         <!-- END HEADER DESKTOP-->
 
         <!-- HEADER MOBILE-->
-        @include('admin.layout.headerMobile')
+        
         <!-- END HEADER MOBILE -->
 
         <!-- PAGE CONTENT-->
