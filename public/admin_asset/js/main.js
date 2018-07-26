@@ -11,7 +11,7 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7'],
           type: 'line',
           datasets: [{
             data: [78, 81, 80, 45, 34, 12, 40],
@@ -77,7 +77,7 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6'],
           type: 'line',
           datasets: [{
             data: [1, 18, 9, 17, 34, 22],
@@ -148,7 +148,7 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6'],
           type: 'line',
           datasets: [{
             data: [65, 59, 84, 84, 51, 55],
@@ -218,10 +218,10 @@
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               data: [78, 81, 80, 65, 58, 75, 60, 75, 65, 60, 60, 75],
               borderColor: "transparent",
               borderWidth: "0",
@@ -262,10 +262,10 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', ''],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', ''],
           datasets: [
             {
-              label: 'My First dataset',
+              label: 'Đã bán',
               backgroundColor: brandService,
               borderColor: 'transparent',
               pointHoverBackgroundColor: '#fff',
@@ -340,7 +340,7 @@
         data: {
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               data: [60, 40],
               backgroundColor: [
                 '#00b5e9',
@@ -360,8 +360,8 @@
             }
           ],
           labels: [
-            'Products',
-            'Services'
+            'Số Liệu Thực',
+            'Số Liệu Dự Kiến'
           ]
         },
         options: {
@@ -409,10 +409,10 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', ''],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', ''],
           datasets: [
             {
-              label: 'My First dataset',
+              label: 'Đã bán',
               backgroundColor: brandService2,
               borderColor: bd_brandService2,
               pointHoverBackgroundColor: '#fff',
@@ -503,10 +503,10 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', ''],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', ''],
           datasets: [
             {
-              label: 'My First dataset',
+              label: 'Đã bán',
               backgroundColor: brandService3,
               borderColor: bd_brandService3,
               pointHoverBackgroundColor: '#fff',
@@ -584,10 +584,10 @@
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               data: [78, 81, 80, 64, 65, 80, 70, 75, 67, 85, 66, 68],
               borderColor: "transparent",
               borderWidth: "0",
@@ -629,7 +629,7 @@
         data: {
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               data: [60, 40],
               backgroundColor: [
                 '#00b5e9',
@@ -649,8 +649,8 @@
             }
           ],
           labels: [
-            'Products',
-            'Services'
+            'Số Liệu Thực',
+            'Số Liệu Dự Kiến'
           ]
         },
         options: {
@@ -882,10 +882,10 @@
         type: 'bar',
         defaultFontFamily: 'Poppins',
         data: {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7"],
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               data: [65, 59, 80, 81, 56, 55, 40],
               borderColor: "rgba(0, 123, 255, 0.9)",
               borderWidth: "0",
@@ -946,7 +946,7 @@
           defaultFontFamily: 'Poppins',
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               data: [65, 59, 66, 45, 56, 55, 40],
               borderColor: "rgba(0, 123, 255, 0.6)",
               borderWidth: "1",
@@ -992,11 +992,11 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7"],
           defaultFontFamily: "Poppins",
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               borderColor: "rgba(0,0,0,.09)",
               borderWidth: "1",
               backgroundColor: "rgba(0,0,0,.07)",
@@ -1210,7 +1210,7 @@
           labels: ["Sun", "Mon", "Tu", "Wed", "Th", "Fri", "Sat"],
           datasets: [
             {
-              label: "My First dataset",
+              label: "Đã bán",
               data: [40, 55, 75, 81, 56, 55, 40],
               borderColor: "rgba(0, 123, 255, 0.9)",
               borderWidth: "0",

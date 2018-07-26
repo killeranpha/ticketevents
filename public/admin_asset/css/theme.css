@@ -95,6 +95,7 @@ p {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    margin-left: 205px;
 }
 
 /* ----- Typography ----- */
@@ -3385,7 +3386,7 @@ section {
 }
 
 .au-task-list {
-    height: auto;
+    height: 424px;
     position: relative;
     overflow-y: auto;
 }
@@ -3403,7 +3404,7 @@ section {
 }
 
 .au-task__item-inner {
-    padding: 15px 15px;
+    padding: 26px 15px;
     padding-left: 40px;
 }
 
@@ -4434,17 +4435,10 @@ section {
     text-transform: capitalize;
 }
 
-.role.admin {
-    background: #fa4251;
-}
-
 .role.user {
     background: #00b5e9;
 }
 
-.role.member {
-    background: #57b846;
-}
 
 .table-top-campaign.table td {
     border-top: none;
@@ -4664,7 +4658,7 @@ section {
 }
 
 .table-data3 thead tr th {
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
     font-weight: 400;
     text-transform: capitalize;
@@ -14638,4 +14632,46 @@ section {
 
 .vue-lists ul, .vue-lists ol {
     padding-left: 30px;
+}
+.text-center {
+    text-align: center;
+    margin-top: 10px;
+}
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.pagination {
+    margin: 0!important;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.pagination-list li.current {
+    background: #f8e36e;
+}
+.pagination-list li {
+    border: 1px solid #e1e1e1;
+    display: inline-block;
+    margin: 1px;
+    border-radius: 2px;
+}
+.pagination-list li a {
+    padding: 5px 10px;
+    display: inline-block;
+}
+.pagenav{
+    color: #20c997;
 }

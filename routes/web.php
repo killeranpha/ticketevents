@@ -44,3 +44,5 @@ Route::get('/danhsachnguoidung', function () {
 Route::get('/quanlynguoidung', function () {
     return view('admin.nguoidung.quanlynguoidung');
 });
+
+        
