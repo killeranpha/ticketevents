@@ -3,7 +3,7 @@
                 <div class="header3-wrap">
                     @include('admin.congcu.logo')
                     <div class="header__navbar">
-                   <!--  menu -->
+                    @include('admin.congcu.menu')
                     </div>
                     <div class="header__tool">
                         <div class="account-wrap">

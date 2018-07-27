@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/abc', function () {
+    return view('welcome');
+});
 Route::get('/index', function () {
     return view('admin.layout.index');
 });
@@ -44,5 +47,7 @@ Route::get('/danhsachnguoidung', function () {
 Route::get('/quanlynguoidung', function () {
     return view('admin.nguoidung.quanlynguoidung');
 });
-
-        
+//danh sach chuc nang
+Route::get('/danhsachchucnang', 'ChucNangController@index');
+//search - chuc nang
+Route::get('/searchChucNang','ChucNangController@index')->name('searchChucNang');
