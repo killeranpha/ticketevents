@@ -51,6 +51,7 @@ Route::get('/quanlynguoidung', function () {
 Route::get('/danhsachchucnang', 'ChucNangController@index');
 //search - chuc nang
 Route::get('/searchChucNang','ChucNangController@index')->name('searchChucNang');
-//Nhóm người dùng
-    //Danh sách nhóm-->Chucvb
-    Route::get('/danhsachnhomnguoidung','NhomNguoiDungController@index');
+//Danh sách nhóm-->Chucvb
+Route::get('/danhsachnhomnguoidung','NhomNguoiDungController@index');
+//danh sach cau hinh
+Route::get('/danhsachcauhinh','CauHinhController@index')->name('danhsachcauhinh');
