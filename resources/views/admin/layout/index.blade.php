@@ -35,21 +35,17 @@
 <body class="animsition">
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
-        @include('admin.layout.header')
         <!-- END HEADER DESKTOP-->
 
         <!-- HEADER MOBILE-->
-        @include('admin.layout.headerMobile')
         <!-- END HEADER MOBILE -->
 
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
             <!-- BREADCRUMB-->
-            @include('admin.layout.breadcrumb')
             <!-- END BREADCRUMB-->
 
             <!-- WELCOME-->
-            @include('admin.layout.welcomeback')
             <!-- END WELCOME-->
             <!-- CONTENT-->
             @yield('content')
