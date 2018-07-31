@@ -29,6 +29,7 @@
 
     <!-- Main CSS-->
     <link href="admin_asset/css/theme.css" rel="stylesheet">
+    <link href="admin_asset/fontawesome/css/all.css" rel="stylesheet">
 
 </head>
 

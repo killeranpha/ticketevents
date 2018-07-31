@@ -20,6 +20,7 @@ Route::get('/home', function () {
 Route::get('/danhsach', function () {
     return view('admin.event.danhsach');
 });
-
+Route::get('/danhsachnhomnguoidung','NhomNguoiDungController@index')->name('danhsachnhomnguoidung');
+Route::get('/themnhomnguoidung','NhomNguoiDungController@create') ->name('themnhomnguoidung');
 
         
