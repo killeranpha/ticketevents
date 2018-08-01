@@ -14,40 +14,33 @@ class NhomNguoiDungController extends Controller
     public function index(Request $request)
     {
         // Lấy dữ liệu
-        $thuTu = isset($request->thuTu)?$request->thuTu:0;
-        $ten = isset($request->ten)?$request->ten:"";
+        $tenTruongSapXep = $request->tenTruongSapXep;
+        $kieuSapXep = $request->kieuSapXep;
         $hienThi =isset($request->hienThi)?$request->hienThi:3;
         $timKiem = isset($request->timKiem)?$request->timKiem:"";
         //select
         $select = NhomNguoiDung::select('thuTu','ten');
-        $countSelect  = count(NhomNguoiDung::all());
+        $selectCount = NhomNguoiDung::select('thuTu','ten');
         //Xử lý
+        $arrayTen =(['0'=> 'thuTu','1'=> 'ten']);
+        $arrayKieu =(['0'=> 'asc','1'=>'desc']);
             //Tìm kiếm
             if($timKiem == ""){
                 $r = $select;
             }else{
                 $r = $select -> where('ten','like',"%".$timKiem."%")
                             -> orWhere('thuTu',$timKiem);
+                $selectCount -> where('ten','like',"%".$timKiem."%")
+                -> orWhere('thuTu',$timKiem);
             }
-            
             //Sắp xếp -- Chỉ sắp xếp theo ten hoặc thuTu
-            if($ten ==""){
-                if($thuTu == 0){
-                    $r = $r->orderBy('thuTu','asc');
-                }else{
-                    $r = $r->orderBy('thuTu','desc');
-                }
-            }else{
-                if($ten == 0){
-                    $r = $r->orderBy('ten','asc');
-                }else{
-                    $r = $r->orderBy('ten','desc');
-                }
+            if(isset($tenTruongSapXep)){
+             $r = $r -> orderBy($arrayTen[$tenTruongSapXep],$arrayKieu[$kieuSapXep]);
             }
             //Phân trang
-            $countWhere = count($r->get());
-            $r = $r -> paginate($hienThi);        
-        return view('Administrator.NhomNguoiDung.index',compact('r','hienThi','thuTu','ten','timKiem','countSelect','countWhere'));
+            $r = $r -> paginate($hienThi);
+            $rCount = $selectCount -> count();        
+        return view('Administrator.NhomNguoiDung.index',compact('r','hienThi','tenTruongSapXep','kieuSapXep','timKiem','rCount'));
     }
 
     /**

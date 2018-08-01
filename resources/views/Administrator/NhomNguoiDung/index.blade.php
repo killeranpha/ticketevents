@@ -4,13 +4,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3 class="title-5 m-b-35">Danh sách nhóm người dùng</h3>
+				<h3 class="title-5 m-b-35">Danh sách nhóm người dùng</h3>
 				<!-- Tùy chọn -->
 				<div style="margin-top:40px"></div>
 				<form>
+				<input type="hidden" name="tenTruongSapXep" id="tenTruongSapXep">
+				<input type="hidden" name="kieuSapXep" id="kieuSapXep">
 					<div class="table-data__tool">
 						<div class="table-data__tool-left">
-							<p>Có {{$countSelect}} nhóm người dùng</p>
+							
 						</div>
 						<div class="table-data__tool-right">
 							<a class="au-btn-filter" href="{{Route('themnhomnguoidung')}}">
@@ -43,7 +45,7 @@
 					</div>
 					@if($timKiem != "")
 					<div>
-						<p>Đã tìm thấy {{$countWhere}} kết quả</p>
+						<p>Đã tìm thấy {{$rCount}} kết quả</p>
 					</div>
 					@endif
 					<!-- Danh sách -->
@@ -52,23 +54,23 @@
 							<thead>
 								<tr>
 									<!-- Thứ tự -->
-									<th>Thứ tự @if($thuTu==0)
-										<button name="thuTu" value="1">
+									<th>Thứ tự @if($kieuSapXep==0)
+										<button onclick="SapXepFunction(0,1)">
 											<i class="fas fa-sort text-white ml-5"></i>
 										</button>
 										@else
-										<button name="thuTu" value="0">
+										<button  onclick="SapXepFunction(0,0)">
 											<i class="fas fa-sort text-white ml-5"></i>
 											<button>
 												@endif
 									</th>
 									<!-- Tên -->
-									<th>Tên @if($ten==0)
-										<button name="ten" value="1">
+									<th>Tên @if($kieuSapXep==0)
+										<button  onclick="SapXepFunction(1,1)">
 											<i class="fas fa-sort  text-white ml-5"></i>
 										</button>
 										@else
-										<button name="ten" value="0">
+										<button onclick="SapXepFunction(1,0)">
 											<i class="fas fa-sort text-white ml-5"></i>
 											<button>
 												@endif
@@ -105,8 +107,14 @@
 <div class="text-center">
 	<div class="pagination">
 		<ul class="pagination-list">
-			{{$r->appends(Request::only('timKiem','hienThi','thuTu','ten'))-> links()}}
+			{{$r->appends(Request::only('timKiem','tenTruongSapXep','kieuSapXep','hienThi'))-> links()}}
 		</ul>
 	</div>
 </div>
+<script>
+	function SapXepFunction(tenTruong,kieuSapXep){
+		$('#tenTruongSapXep').val(tenTruong);
+		$('#kieuSapXep').val(kieuSapXep);
+	}
+</script>
 @endsection
