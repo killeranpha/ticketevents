@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CauHinh extends Migration
+class CreateCauhinhTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class CauHinh extends Migration
     public function up()
     {
         Schema::create('cauhinh', function (Blueprint $table) {
-            $table->increments('id');
+             $table->increments('id');
             $table->string('ten');
             $table->integer('nhomCauHinh');
             $table->timestamps();
