@@ -22,5 +22,8 @@ Route::get('/danhsach', function () {
 });
 Route::get('/danhsachnhomnguoidung','NhomNguoiDungController@index')->name('danhsachnhomnguoidung');
 Route::get('/themnhomnguoidung','NhomNguoiDungController@create') ->name('themnhomnguoidung');
+//danh sach chuc nang
+Route::get('/danhsachchucnang','ChucNangController@index')->name('danhsachchucnang');
+Route::get('/themmoichucnang','ChucNangController@create')->name('themmoichucnang');
 
         
