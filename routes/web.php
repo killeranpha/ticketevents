@@ -27,5 +27,5 @@ Route::get('/danhsachchucnang','ChucNangController@index')->name('danhsachchucna
 Route::get('/themmoichucnang','ChucNangController@create')->name('themmoichucnang');
 //danh sach nguoi dung
 Route::get('/danhsachnguoidung','UsersController@index');
-
-        
+//danh sach cau hinh
+Route::get('danhsachcauhinh','CauHinhController@index')->name('danhsachcauhinh');
